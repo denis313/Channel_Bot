@@ -6,7 +6,8 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
 from config import load_config
-# from handlers.general import start
+from handlers import start_handler, handler_buy
+
 # from handlers.for_admin import basic_functions
 
 # from middleware.trottling import ThrottlingMiddleware
@@ -30,7 +31,7 @@ async def main():
     bot = Bot(token=config.tg_bot.token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     # Регистриуем роутеры в диспетчере
-    dp.include_routers(start.router)
+    dp.include_routers(start_handler.router, handler_buy.router)
 
     # Пропускаем накопившиеся апдейты и запускаем polling
     await bot.delete_webhook(drop_pending_updates=True)
