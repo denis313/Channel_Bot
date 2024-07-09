@@ -18,11 +18,11 @@ def load_config(path: str | None = None) -> Config:
     return Config(tg_bot=TgBot(token=env('BOT_TOKEN')))
 
 
-def admins_ids(path: str | None = None) -> list:
+def admin_id(path: str | None = None) -> list:
     env = environs.Env()
     env.read_env(path)
-    ids = env('admins_id').split(',')
-    return ids
+    id_admin = env('admins_id')
+    return id_admin
 
 
-DATABASE_URL = 'postgresql+asyncpg://postgres:FunkoPop@localhost/travels_db'
+DATABASE_URL = 'postgresql+asyncpg://postgres:FunkoPop@localhost/channel_db'
