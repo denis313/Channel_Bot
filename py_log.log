@@ -1,0 +1,6 @@
+[2024-07-09 20:17:11,048] #INFO     dispatcher.py:527 - aiogram.dispatcher - Start polling
+[2024-07-09 20:17:11,139] #INFO     dispatcher.py:341 - aiogram.dispatcher - Run polling for bot @Bot_for_schoolbot id=7417513030 - 'SchoolBot'
+[2024-07-09 20:17:20,143] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874456 is handled. Duration 921 ms by bot id=7417513030
+[2024-07-09 20:17:21,635] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874457 is handled. Duration 155 ms by bot id=7417513030
+[2024-07-09 20:17:49,238] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874458 is handled. Duration 359 ms by bot id=7417513030
+[2024-07-09 20:17:51,533] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874459 is handled. Duration 233 ms by bot id=7417513030
