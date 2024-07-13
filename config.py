@@ -18,7 +18,7 @@ def load_config(path: str | None = None) -> Config:
     return Config(tg_bot=TgBot(token=env('BOT_TOKEN')))
 
 
-def admin_id(path: str | None = None) -> list:
+def admin_id(path: str | None = None) -> str:
     env = environs.Env()
     env.read_env(path)
     id_admin = env('admins_id')
