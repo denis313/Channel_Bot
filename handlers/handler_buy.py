@@ -1,8 +1,11 @@
 import logging
+from datetime import datetime, timedelta
 
 from aiogram import F, Router, Bot
 from aiogram.types import Message, CallbackQuery, LabeledPrice, PreCheckoutQuery
-from config import admin_id
+
+from config import admin_id, DATABASE_URL
+from database.requests import DatabaseManager
 from lexicon import lexicon
 
 # from LEXICON.lexicon import LEXICON_Creator, LEXICON_keyboard, LEXICON_FSM
@@ -16,25 +19,32 @@ from lexicon import lexicon
 
 logger = logging.getLogger(__name__)
 router = Router()
+router.message.filter(F.chat.type == 'private')
+dsn = DATABASE_URL
+db_manager = DatabaseManager(dsn=dsn)
 
 
 @router.callback_query()
 async def buy_subscribe(callback: CallbackQuery, bot: Bot):
-    await bot.send_invoice(
-        chat_id=callback.from_user.id,
-        need_name=True,
-        need_email=True,
-        need_phone_number=True,
-        title='Подписка на канал',
-        description='Подписка на платный закрытый канал',
-        provider_token="381764678:TEST:89489",
-        currency='RUB',
-        payload='buy_subscribe',
-        start_parameter='text',
-        prices=[
-            LabeledPrice(label="rub", amount=300 * 100)
-        ]
-    )
+    user = await db_manager.get_user(user_id=callback.from_user.id)
+    if not user or user.subscription_status is False:
+        await bot.send_invoice(
+            chat_id=callback.from_user.id,
+            need_name=True,
+            need_email=True,
+            need_phone_number=True,
+            title='Подписка на канал',
+            description='Подписка на платный закрытый канал',
+            provider_token="381764678:TEST:89489",
+            currency='RUB',
+            payload='buy_subscribe',
+            start_parameter='text',
+            prices=[
+                LabeledPrice(label="rub", amount=300 * 100)
+            ]
+        )
+    else:
+        await callback.message.answer(lexicon['already_buy'])
 
 
 @router.pre_checkout_query()
@@ -44,10 +54,29 @@ async def process_pre_check(pre_checkout_query: PreCheckoutQuery, bot: Bot):
 
 @router.message(F.successful_payment)
 async def successful_payment_handler(message: Message, bot: Bot):
+    date = datetime.now().replace(second=0, microsecond=0)
+    end_date = date + timedelta(days=30)
     successful_payment = message.successful_payment
-    print(f'Successful payment: {successful_payment}')
-    await bot.send_message(chat_id=int(admin_id()),
-                           text=lexicon['new_user'].format(user_full_name=successful_payment.order_info.name,
-                                                           user_id=message.from_user.id,
-                                                           user_email=successful_payment.order_info.email,
-                                                           user_phone=successful_payment.order_info.phone_number))
+    user = await db_manager.get_user(user_id=message.from_user.id)
+    await message.answer('🟢 Поздравляю! Подписка успешно подключена!')
+    if user:
+        await db_manager.update_user(user_id=message.from_user.id, user_data={'subscription_status': True,
+                                                                              'subscription_start_date': date,
+                                                                              'subscription_end_date': end_date})
+    else:
+        await db_manager.add_user(user_data={'user_id': message.from_user.id,
+                                             'telegram_id': message.from_user.id,
+                                             'username': successful_payment.order_info.name,
+                                             'subscription_status': True,
+                                             'subscription_start_date': date,
+                                             'subscription_end_date': end_date})
+        await message.answer(lexicon['link'].format(subscription_start_date=date.strftime("%d-%m-%Y %H:%M"),
+                                                    subscription_end_date=end_date.strftime("%d-%m-%Y %H:%M")))
+        await bot.send_message(chat_id=int(admin_id()),
+                               text=lexicon['new_user'].format(user_full_name=successful_payment.order_info.name,
+                                                               user_id=message.from_user.id,
+                                                               user_email=successful_payment.order_info.email,
+                                                               user_phone=successful_payment.order_info.phone_number))
+
+
+
