@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ab16fe5-36c9-4cf8-9e56-8012cc12287f" name="Changes" comment="add fails config, main, start_handler.py">
-      <change afterPath="$PROJECT_DIR$/.idea/Channel_Bot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/check_subscription.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6ab16fe5-36c9-4cf8-9e56-8012cc12287f" name="Changes" comment="updating files">
+      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/genegal_handlers/start_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/check_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_subscription.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_subscription.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/handler_buy.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handler_buy.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/handlers/start_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/start_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lexicon.py" beforeDir="false" afterPath="$PROJECT_DIR$/lexicon.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/py_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/py_log.log" afterDir="false" />
     </list>
@@ -52,6 +44,7 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -68,7 +61,7 @@
       <recent name="C:\Users\evtus\PycharmProjects\Chanel_Bot\genegal_handlers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="Channel_Bot" />
       <option name="ENV_FILES" value="" />
@@ -102,6 +95,37 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Channel_Bot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -143,7 +167,55 @@
       <option name="project" value="LOCAL" />
       <updated>1720354019785</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updates">
+      <option name="closed" value="true" />
+      <created>1720868038622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868038622</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add files">
+      <option name="closed" value="true" />
+      <created>1720868105608</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868105608</updated>
+    </task>
+    <task id="LOCAL-00006" summary="проверка предыдущей оплаты">
+      <option name="closed" value="true" />
+      <created>1720868318498</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868318498</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add file">
+      <option name="closed" value="true" />
+      <created>1720868601598</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868601598</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add file">
+      <option name="closed" value="true" />
+      <created>1720868652388</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868652388</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updating files">
+      <option name="closed" value="true" />
+      <created>1720868748626</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1720868748626</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -173,6 +245,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add fail start_handler.py" />
     <MESSAGE value="add fails config, main, start_handler.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="add fails config, main, start_handler.py" />
+    <MESSAGE value="updates" />
+    <MESSAGE value="add files" />
+    <MESSAGE value="проверка предыдущей оплаты" />
+    <MESSAGE value="add file" />
+    <MESSAGE value="updating files" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating files" />
   </component>
 </project>

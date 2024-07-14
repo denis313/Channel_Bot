@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from sqlalchemy import ForeignKey, BigInteger, Boolean, DateTime, Time
-from sqlalchemy.orm import relationship, DeclarativeBase, Mapped, mapped_column
+from sqlalchemy import BigInteger, Boolean, Date
+from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy.ext.asyncio import AsyncAttrs
 
 
@@ -17,8 +17,8 @@ class Users(Base):
     telegram_id = mapped_column(BigInteger, unique=True, nullable=False)
     username: Mapped[str] = mapped_column()
     subscription_status = mapped_column(Boolean)
-    subscription_start_date = mapped_column(DateTime)
-    subscription_end_date = mapped_column(DateTime)
+    subscription_start_date = mapped_column(Date)
+    subscription_end_date = mapped_column(Date)
 
     def __repr__(self) -> str:
         ...

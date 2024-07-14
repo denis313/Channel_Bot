@@ -1,5 +1,5 @@
 import logging
-from datetime import datetime, timedelta
+from datetime import timedelta, date
 
 from aiogram import F, Router, Bot
 from aiogram.types import Message, CallbackQuery, LabeledPrice, PreCheckoutQuery
@@ -54,8 +54,8 @@ async def process_pre_check(pre_checkout_query: PreCheckoutQuery, bot: Bot):
 
 @router.message(F.successful_payment)
 async def successful_payment_handler(message: Message, bot: Bot):
-    date = datetime.now().replace(second=0, microsecond=0)
-    end_date = date + timedelta(days=30)
+    start_date = date.today()
+    end_date = start_date + timedelta(days=5)
     successful_payment = message.successful_payment
     user = await db_manager.get_user(user_id=message.from_user.id)
     await message.answer('🟢 Поздравляю! Подписка успешно подключена!')
@@ -68,10 +68,10 @@ async def successful_payment_handler(message: Message, bot: Bot):
                                              'telegram_id': message.from_user.id,
                                              'username': successful_payment.order_info.name,
                                              'subscription_status': True,
-                                             'subscription_start_date': date,
+                                             'subscription_start_date': start_date,
                                              'subscription_end_date': end_date})
-        await message.answer(lexicon['link'].format(subscription_start_date=date.strftime("%d-%m-%Y %H:%M"),
-                                                    subscription_end_date=end_date.strftime("%d-%m-%Y %H:%M")))
+        await message.answer(lexicon['link'].format(subscription_start_date=start_date.strftime('%d-%m-%y'),
+                                                    subscription_end_date=end_date.strftime('%d-%m-%y')))
         await bot.send_message(chat_id=int(admin_id()),
                                text=lexicon['new_user'].format(user_full_name=successful_payment.order_info.name,
                                                                user_id=message.from_user.id,

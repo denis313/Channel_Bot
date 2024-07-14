@@ -27,6 +27,10 @@ async def main():
     dp = Dispatcher()
     bot = Bot(token=config.tg_bot.token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
+    scheduler = AsyncIOScheduler()
+    scheduler.add_job(check_status, 'cron', hour=0, minute=0)
+    scheduler.start()
+
     # Регистриуем роутеры в диспетчере
     dp.include_routers(start_handler.router, handler_buy.router, check_handler.router)
 
@@ -37,9 +41,6 @@ async def main():
 
 
 if __name__ == '__main__':
-    # scheduler = AsyncIOScheduler()
-    # scheduler.add_job(check_status, 'cron', day=1, hour=0, minute=0)  # Запуск каждый месяц в первый день в полночь
-    # scheduler.start()
     # Выводим в консоль информацию о начале запуска бота
     logger.info('Starting bot')
     try:
