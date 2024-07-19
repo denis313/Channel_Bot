@@ -1,93 +1,259 @@
-[2024-07-14 20:34:50,428] #DEBUG    win32.py:58 - tzlocal - Looking up time zone info from registry
-[2024-07-14 20:34:50,455] #INFO     base.py:454 - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
-[2024-07-14 20:34:50,461] #INFO     base.py:895 - apscheduler.scheduler - Added job "check_status" to job store "default"
-[2024-07-14 20:34:50,461] #INFO     base.py:181 - apscheduler.scheduler - Scheduler started
-[2024-07-14 20:34:50,463] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
-[2024-07-14 20:34:50,463] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-15 00:00:00+03:00 (in 12309.536566 seconds)
-[2024-07-14 20:34:50,753] #INFO     dispatcher.py:527 - aiogram.dispatcher - Start polling
-[2024-07-14 20:34:50,846] #INFO     dispatcher.py:341 - aiogram.dispatcher - Run polling for bot @Bot_for_schoolbot id=7417513030 - 'SchoolBot'
-[2024-07-14 20:35:17,026] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
-[2024-07-14 20:35:17,026] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-14 20:35:17,033] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
-[2024-07-14 20:35:17,033] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-14 20:35:17,039] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
-[2024-07-14 20:35:17,040] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-14 20:35:17,043] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:35:17,059] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
+[2024-07-19 01:06:54,060] #DEBUG    win32.py:58 - tzlocal - Looking up time zone info from registry
+[2024-07-19 01:06:54,096] #INFO     base.py:454 - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2024-07-19 01:06:54,107] #INFO     base.py:895 - apscheduler.scheduler - Added job "check_status" to job store "default"
+[2024-07-19 01:06:54,108] #INFO     base.py:181 - apscheduler.scheduler - Scheduler started
+[2024-07-19 01:06:54,110] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
+[2024-07-19 01:06:54,110] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-19 01:10:00+03:00 (in 185.889575 seconds)
+[2024-07-19 01:06:54,386] #INFO     dispatcher.py:527 - aiogram.dispatcher - Start polling
+[2024-07-19 01:06:54,472] #INFO     dispatcher.py:341 - aiogram.dispatcher - Run polling for bot @Bot_for_schoolbot id=7417513030 - 'SchoolBot'
+[2024-07-19 01:07:21,250] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
+[2024-07-19 01:07:21,250] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:07:21,254] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
+[2024-07-19 01:07:21,255] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:07:21,259] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
+[2024-07-19 01:07:21,259] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:07:21,265] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
+[2024-07-19 01:07:21,274] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
 FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
 WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-[2024-07-14 20:35:17,059] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00064s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-[2024-07-14 20:35:17,082] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-14 20:35:17,436] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874810 is handled. Duration 891 ms by bot id=7417513030
-[2024-07-14 20:35:19,742] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
-[2024-07-14 20:35:19,744] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-14 20:35:19,749] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
-[2024-07-14 20:35:19,750] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-14 20:35:19,755] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
-[2024-07-14 20:35:19,756] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-14 20:35:19,759] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:35:19,767] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
+[2024-07-19 01:07:21,274] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00050s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
+[2024-07-19 01:07:21,289] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
+[2024-07-19 01:07:21,648] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874868 is handled. Duration 750 ms by bot id=7417513030
+[2024-07-19 01:07:28,625] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
+[2024-07-19 01:07:28,626] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:07:28,631] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
+[2024-07-19 01:07:28,631] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:07:28,636] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
+[2024-07-19 01:07:28,636] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:07:28,639] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
+[2024-07-19 01:07:28,650] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
 FROM users 
 WHERE users.user_id = $1::BIGINT
-[2024-07-14 20:35:19,768] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00080s] (6151166803,)
-[2024-07-14 20:35:19,780] #DEBUG    requests.py:33 - root - Get user by id=6151166803
-[2024-07-14 20:35:19,780] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-14 20:35:19,921] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874811 is handled. Duration 530 ms by bot id=7417513030
-[2024-07-14 20:36:07,822] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874812 is handled. Duration 250 ms by bot id=7417513030
-[2024-07-14 20:36:09,829] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:36:09,829] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-14 20:36:09,830] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 50.06s ago] (6151166803,)
-[2024-07-14 20:36:09,840] #DEBUG    requests.py:33 - root - Get user by id=6151166803
-[2024-07-14 20:36:09,841] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-14 20:36:10,039] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:36:10,043] #INFO     base.py:1846 - sqlalchemy.engine.Engine - INSERT INTO users (user_id, telegram_id, username, subscription_status, subscription_start_date, subscription_end_date) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN, $5::DATE, $6::DATE) RETURNING users.id_user
-[2024-07-14 20:36:10,043] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00047s] (6151166803, 6151166803, 'D', True, datetime.date(2024, 7, 14), datetime.date(2024, 7, 19))
-[2024-07-14 20:36:10,051] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-14 20:36:10,056] #DEBUG    requests.py:25 - root - New user
-[2024-07-14 20:36:10,488] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874813 is handled. Duration 734 ms by bot id=7417513030
-[2024-07-14 20:38:37,556] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:38:37,557] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
-FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
-WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-[2024-07-14 20:38:37,557] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 200.5s ago] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-[2024-07-14 20:38:37,559] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-14 20:38:37,850] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874814 is handled. Duration 297 ms by bot id=7417513030
-[2024-07-14 20:38:38,867] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:38:38,868] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-14 20:38:38,868] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 199.1s ago] (6151166803,)
-[2024-07-14 20:38:38,870] #DEBUG    requests.py:33 - root - Get user by id=6151166803
-[2024-07-14 20:38:38,871] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-14 20:38:38,982] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874815 is handled. Duration 109 ms by bot id=7417513030
-[2024-07-14 20:39:05,580] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:39:05,580] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
-FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
-WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-[2024-07-14 20:39:05,581] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 228.5s ago] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-[2024-07-14 20:39:05,583] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-14 20:39:05,893] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874816 is handled. Duration 312 ms by bot id=7417513030
-[2024-07-14 20:39:07,081] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:39:07,081] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-14 20:39:07,082] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 227.3s ago] (5142129647,)
-[2024-07-14 20:39:07,084] #DEBUG    requests.py:33 - root - Get user by id=5142129647
-[2024-07-14 20:39:07,085] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-14 20:39:07,306] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874817 is handled. Duration 217 ms by bot id=7417513030
-[2024-07-14 20:39:32,394] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874818 is handled. Duration 344 ms by bot id=7417513030
-[2024-07-14 20:39:34,339] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:39:34,340] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-14 20:39:34,340] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 254.6s ago] (5142129647,)
-[2024-07-14 20:39:34,344] #DEBUG    requests.py:33 - root - Get user by id=5142129647
-[2024-07-14 20:39:34,344] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-14 20:39:34,463] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-14 20:39:34,464] #INFO     base.py:1846 - sqlalchemy.engine.Engine - INSERT INTO users (user_id, telegram_id, username, subscription_status, subscription_start_date, subscription_end_date) VALUES ($1::BIGINT, $2::BIGINT, $3::VARCHAR, $4::BOOLEAN, $5::DATE, $6::DATE) RETURNING users.id_user
-[2024-07-14 20:39:34,464] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 204.4s ago] (5142129647, 5142129647, 'Окса', True, datetime.date(2024, 7, 14), datetime.date(2024, 7, 19))
-[2024-07-14 20:39:34,466] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-14 20:39:34,468] #DEBUG    requests.py:25 - root - New user
-[2024-07-14 20:39:34,774] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874819 is handled. Duration 437 ms by bot id=7417513030
+[2024-07-19 01:07:28,650] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00062s] (1087502760,)
+[2024-07-19 01:07:28,660] #DEBUG    requests.py:33 - root - Get user by id=1087502760
+[2024-07-19 01:07:28,660] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
+[2024-07-19 01:07:28,782] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874869 is handled. Duration 484 ms by bot id=7417513030
+[2024-07-19 01:09:59,993] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
+[2024-07-19 01:09:59,993] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-19 01:10:00+03:00 (in 0.006052 seconds)
+[2024-07-19 01:10:00,009] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
+[2024-07-19 01:10:00,010] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-20 01:10:00+03:00 (in 86399.989203 seconds)
+[2024-07-19 01:10:00,011] #INFO     base_py3.py:28 - apscheduler.executors.default - Running job "check_status (trigger: cron[hour='1', minute='10'], next run at: 2024-07-20 01:10:00 MSK)" (scheduled at 2024-07-19 01:10:00+03:00)
+[2024-07-19 01:10:00,011] #DEBUG    check_subscription.py:16 - root - check_status
+[2024-07-19 01:10:00,349] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
+[2024-07-19 01:10:00,351] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:10:00,355] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
+[2024-07-19 01:10:00,356] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:10:00,359] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
+[2024-07-19 01:10:00,359] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
+[2024-07-19 01:10:00,362] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
+[2024-07-19 01:10:00,364] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
+FROM users
+[2024-07-19 01:10:00,365] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00049s] ()
+[2024-07-19 01:10:00,372] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
+[2024-07-19 01:10:00,373] #INFO     base_py3.py:41 - apscheduler.executors.default - Job "check_status (trigger: cron[hour='1', minute='10'], next run at: 2024-07-20 01:10:00 MSK)" executed successfully
+[2024-07-19 02:26:55,215] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2024-07-19 02:26:55,221] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
+[2024-07-19 02:26:56,243] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:26:56,244] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.315542 seconds and try again... (tryings = 1, bot id = 7417513030)
+[2024-07-19 02:26:57,571] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:26:57,571] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.724231 seconds and try again... (tryings = 2, bot id = 7417513030)
+[2024-07-19 02:26:59,308] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:26:59,309] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 2.298462 seconds and try again... (tryings = 3, bot id = 7417513030)
+[2024-07-19 02:27:01,618] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:01,618] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 3.019104 seconds and try again... (tryings = 4, bot id = 7417513030)
+[2024-07-19 02:27:04,657] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:04,657] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 3.996722 seconds and try again... (tryings = 5, bot id = 7417513030)
+[2024-07-19 02:27:08,672] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:08,672] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.166913 seconds and try again... (tryings = 6, bot id = 7417513030)
+[2024-07-19 02:27:13,856] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:13,856] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.131094 seconds and try again... (tryings = 7, bot id = 7417513030)
+[2024-07-19 02:27:19,001] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:19,001] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.970165 seconds and try again... (tryings = 8, bot id = 7417513030)
+[2024-07-19 02:27:23,976] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:23,977] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.966250 seconds and try again... (tryings = 9, bot id = 7417513030)
+[2024-07-19 02:27:28,957] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:28,958] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.998696 seconds and try again... (tryings = 10, bot id = 7417513030)
+[2024-07-19 02:27:33,977] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:33,978] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.055758 seconds and try again... (tryings = 11, bot id = 7417513030)
+[2024-07-19 02:27:39,038] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:39,038] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.087635 seconds and try again... (tryings = 12, bot id = 7417513030)
+[2024-07-19 02:27:44,137] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:44,137] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.930370 seconds and try again... (tryings = 13, bot id = 7417513030)
+[2024-07-19 02:27:49,114] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:49,121] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.024562 seconds and try again... (tryings = 14, bot id = 7417513030)
+[2024-07-19 02:27:54,156] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:54,157] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.019540 seconds and try again... (tryings = 15, bot id = 7417513030)
+[2024-07-19 02:27:59,201] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:27:59,201] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.002835 seconds and try again... (tryings = 16, bot id = 7417513030)
+[2024-07-19 02:28:04,216] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:04,217] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.949124 seconds and try again... (tryings = 17, bot id = 7417513030)
+[2024-07-19 02:28:09,188] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:09,188] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.101245 seconds and try again... (tryings = 18, bot id = 7417513030)
+[2024-07-19 02:28:14,391] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:14,392] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.917894 seconds and try again... (tryings = 19, bot id = 7417513030)
+[2024-07-19 02:28:19,321] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:19,321] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.126244 seconds and try again... (tryings = 20, bot id = 7417513030)
+[2024-07-19 02:28:24,462] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:24,463] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.881903 seconds and try again... (tryings = 21, bot id = 7417513030)
+[2024-07-19 02:28:29,360] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:29,360] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.133591 seconds and try again... (tryings = 22, bot id = 7417513030)
+[2024-07-19 02:28:34,504] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:34,504] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.108858 seconds and try again... (tryings = 23, bot id = 7417513030)
+[2024-07-19 02:28:39,629] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:39,630] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.837309 seconds and try again... (tryings = 24, bot id = 7417513030)
+[2024-07-19 02:28:44,481] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:44,481] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.975612 seconds and try again... (tryings = 25, bot id = 7417513030)
+[2024-07-19 02:28:49,474] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:49,475] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.966780 seconds and try again... (tryings = 26, bot id = 7417513030)
+[2024-07-19 02:28:54,447] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:54,447] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.991805 seconds and try again... (tryings = 27, bot id = 7417513030)
+[2024-07-19 02:28:59,448] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:28:59,448] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.041313 seconds and try again... (tryings = 28, bot id = 7417513030)
+[2024-07-19 02:29:04,505] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:04,505] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.966590 seconds and try again... (tryings = 29, bot id = 7417513030)
+[2024-07-19 02:29:09,487] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:09,488] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.107005 seconds and try again... (tryings = 30, bot id = 7417513030)
+[2024-07-19 02:29:14,612] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:14,614] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.991017 seconds and try again... (tryings = 31, bot id = 7417513030)
+[2024-07-19 02:29:19,623] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:19,623] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.067134 seconds and try again... (tryings = 32, bot id = 7417513030)
+[2024-07-19 02:29:24,698] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:24,698] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.996035 seconds and try again... (tryings = 33, bot id = 7417513030)
+[2024-07-19 02:29:29,718] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:29,719] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.113951 seconds and try again... (tryings = 34, bot id = 7417513030)
+[2024-07-19 02:29:34,844] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:34,844] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.038541 seconds and try again... (tryings = 35, bot id = 7417513030)
+[2024-07-19 02:29:39,892] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:39,893] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.984679 seconds and try again... (tryings = 36, bot id = 7417513030)
+[2024-07-19 02:29:44,888] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:44,889] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.069226 seconds and try again... (tryings = 37, bot id = 7417513030)
+[2024-07-19 02:29:49,991] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:49,992] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.997250 seconds and try again... (tryings = 38, bot id = 7417513030)
+[2024-07-19 02:29:55,003] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:55,004] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.963651 seconds and try again... (tryings = 39, bot id = 7417513030)
+[2024-07-19 02:29:59,979] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:29:59,979] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.923149 seconds and try again... (tryings = 40, bot id = 7417513030)
+[2024-07-19 02:30:04,920] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:04,921] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.076420 seconds and try again... (tryings = 41, bot id = 7417513030)
+[2024-07-19 02:30:10,003] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:10,004] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.974006 seconds and try again... (tryings = 42, bot id = 7417513030)
+[2024-07-19 02:30:15,002] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:15,002] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.037874 seconds and try again... (tryings = 43, bot id = 7417513030)
+[2024-07-19 02:30:20,058] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:20,058] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.215089 seconds and try again... (tryings = 44, bot id = 7417513030)
+[2024-07-19 02:30:25,281] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:25,281] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.111920 seconds and try again... (tryings = 45, bot id = 7417513030)
+[2024-07-19 02:30:30,409] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:30,409] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.895914 seconds and try again... (tryings = 46, bot id = 7417513030)
+[2024-07-19 02:30:35,314] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:35,314] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.989385 seconds and try again... (tryings = 47, bot id = 7417513030)
+[2024-07-19 02:30:40,311] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:40,311] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.844255 seconds and try again... (tryings = 48, bot id = 7417513030)
+[2024-07-19 02:30:45,173] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:45,173] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.884824 seconds and try again... (tryings = 49, bot id = 7417513030)
+[2024-07-19 02:30:50,074] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:50,074] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.071082 seconds and try again... (tryings = 50, bot id = 7417513030)
+[2024-07-19 02:30:55,154] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:30:55,155] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.137314 seconds and try again... (tryings = 51, bot id = 7417513030)
+[2024-07-19 02:31:00,296] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:00,297] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.060253 seconds and try again... (tryings = 52, bot id = 7417513030)
+[2024-07-19 02:31:05,374] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:05,374] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.897500 seconds and try again... (tryings = 53, bot id = 7417513030)
+[2024-07-19 02:31:10,285] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:10,285] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.023013 seconds and try again... (tryings = 54, bot id = 7417513030)
+[2024-07-19 02:31:15,320] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:15,321] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.141946 seconds and try again... (tryings = 55, bot id = 7417513030)
+[2024-07-19 02:31:20,471] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:20,471] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.843443 seconds and try again... (tryings = 56, bot id = 7417513030)
+[2024-07-19 02:31:25,325] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:25,325] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.798979 seconds and try again... (tryings = 57, bot id = 7417513030)
+[2024-07-19 02:31:30,133] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:30,134] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.143094 seconds and try again... (tryings = 58, bot id = 7417513030)
+[2024-07-19 02:31:35,292] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:35,293] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.974192 seconds and try again... (tryings = 59, bot id = 7417513030)
+[2024-07-19 02:31:40,285] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:40,289] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.141144 seconds and try again... (tryings = 60, bot id = 7417513030)
+[2024-07-19 02:31:45,441] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:45,442] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.970841 seconds and try again... (tryings = 61, bot id = 7417513030)
+[2024-07-19 02:31:50,430] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:50,431] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.131864 seconds and try again... (tryings = 62, bot id = 7417513030)
+[2024-07-19 02:31:55,578] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:31:55,579] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.955928 seconds and try again... (tryings = 63, bot id = 7417513030)
+[2024-07-19 02:32:00,541] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:00,542] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.992859 seconds and try again... (tryings = 64, bot id = 7417513030)
+[2024-07-19 02:32:05,551] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:05,551] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.962575 seconds and try again... (tryings = 65, bot id = 7417513030)
+[2024-07-19 02:32:10,528] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:10,528] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.049885 seconds and try again... (tryings = 66, bot id = 7417513030)
+[2024-07-19 02:32:15,582] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:15,582] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.041206 seconds and try again... (tryings = 67, bot id = 7417513030)
+[2024-07-19 02:32:20,640] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:20,641] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.837870 seconds and try again... (tryings = 68, bot id = 7417513030)
+[2024-07-19 02:32:25,490] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:25,491] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.005218 seconds and try again... (tryings = 69, bot id = 7417513030)
+[2024-07-19 02:32:30,511] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:30,512] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.899607 seconds and try again... (tryings = 70, bot id = 7417513030)
+[2024-07-19 02:32:35,417] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:35,418] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.060979 seconds and try again... (tryings = 71, bot id = 7417513030)
+[2024-07-19 02:32:40,489] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:40,490] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.928109 seconds and try again... (tryings = 72, bot id = 7417513030)
+[2024-07-19 02:32:45,437] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:45,437] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.013408 seconds and try again... (tryings = 73, bot id = 7417513030)
+[2024-07-19 02:32:50,505] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:50,507] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.830329 seconds and try again... (tryings = 74, bot id = 7417513030)
+[2024-07-19 02:32:55,345] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:32:55,345] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.908511 seconds and try again... (tryings = 75, bot id = 7417513030)
+[2024-07-19 02:33:00,282] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:00,290] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.299363 seconds and try again... (tryings = 76, bot id = 7417513030)
+[2024-07-19 02:33:06,539] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:06,540] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.903530 seconds and try again... (tryings = 77, bot id = 7417513030)
+[2024-07-19 02:33:11,489] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:11,490] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.967651 seconds and try again... (tryings = 78, bot id = 7417513030)
+[2024-07-19 02:33:16,830] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:16,830] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.954838 seconds and try again... (tryings = 79, bot id = 7417513030)
+[2024-07-19 02:33:22,416] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:22,417] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.839378 seconds and try again... (tryings = 80, bot id = 7417513030)
+[2024-07-19 02:33:27,317] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:27,317] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.032407 seconds and try again... (tryings = 81, bot id = 7417513030)
+[2024-07-19 02:33:32,404] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:32,404] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.015080 seconds and try again... (tryings = 82, bot id = 7417513030)
+[2024-07-19 02:33:37,432] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:37,432] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.949740 seconds and try again... (tryings = 83, bot id = 7417513030)
+[2024-07-19 02:33:42,400] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:33:42,401] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.025950 seconds and try again... (tryings = 84, bot id = 7417513030)
+[2024-07-19 02:50:31,685] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:50:31,687] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.189592 seconds and try again... (tryings = 85, bot id = 7417513030)
+[2024-07-19 02:50:36,932] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:50:36,932] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.869318 seconds and try again... (tryings = 86, bot id = 7417513030)
+[2024-07-19 02:50:41,819] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:50:41,820] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.033772 seconds and try again... (tryings = 87, bot id = 7417513030)
+[2024-07-19 02:50:46,863] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:50:46,864] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.050370 seconds and try again... (tryings = 88, bot id = 7417513030)
+[2024-07-19 02:52:14,802] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:52:14,802] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.123668 seconds and try again... (tryings = 89, bot id = 7417513030)
+[2024-07-19 02:52:19,943] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 02:52:19,943] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.934986 seconds and try again... (tryings = 90, bot id = 7417513030)
+[2024-07-19 12:27:28,355] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-19 12:27:28,355] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 5.065580 seconds and try again... (tryings = 91, bot id = 7417513030)
+[2024-07-19 12:27:33,438] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-19 12:27:33,438] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.944058 seconds and try again... (tryings = 92, bot id = 7417513030)
+[2024-07-19 12:27:38,401] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-19 12:27:38,401] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.979027 seconds and try again... (tryings = 93, bot id = 7417513030)
+[2024-07-19 12:27:43,989] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-19 12:27:43,989] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.953858 seconds and try again... (tryings = 94, bot id = 7417513030)
+[2024-07-19 12:27:59,364] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 95, bot id = 7417513030)
+[2024-07-19 12:28:02,951] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [WinError 1236] Подключение к сети было разорвано локальной системой
+[2024-07-19 12:28:02,951] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
+[2024-07-19 12:28:03,967] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 12:28:03,967] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.382037 seconds and try again... (tryings = 1, bot id = 7417513030)
+[2024-07-19 12:28:05,828] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 12:28:05,828] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.714088 seconds and try again... (tryings = 2, bot id = 7417513030)
+[2024-07-19 12:28:07,745] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 12:28:07,745] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 2.128279 seconds and try again... (tryings = 3, bot id = 7417513030)
+[2024-07-19 12:28:10,160] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 12:28:10,160] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 2.757281 seconds and try again... (tryings = 4, bot id = 7417513030)
+[2024-07-19 12:28:13,595] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 12:28:13,596] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 3.440094 seconds and try again... (tryings = 5, bot id = 7417513030)
+[2024-07-19 12:28:17,443] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+[2024-07-19 12:28:17,444] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 4.529037 seconds and try again... (tryings = 6, bot id = 7417513030)
+[2024-07-19 12:28:32,533] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 7, bot id = 7417513030)

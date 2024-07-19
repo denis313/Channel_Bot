@@ -2,11 +2,9 @@ import asyncio
 import logging
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from aiogram import Bot, Dispatcher
-from aiogram.client.default import DefaultBotProperties
-from aiogram.enums import ParseMode
 
+from bot import bot
 from check_subscription import check_status
-from config import load_config
 from handlers import start_handler, handler_buy, check_handler
 
 # Инициализируем логгер модуля
@@ -21,14 +19,11 @@ async def main():
                         filemode="w",
                         format='[%(asctime)s] #%(levelname)-8s %(filename)s:%(lineno)d - %(name)s - %(message)s')
 
-    # Загружаем конфиг в переменную config
-    config = load_config()
     # Инициализируем бот и диспетчер
     dp = Dispatcher()
-    bot = Bot(token=config.tg_bot.token, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(check_status, 'cron', hour=0, minute=0)
+    scheduler.add_job(check_status, 'cron', hour=1, minute=10)
     scheduler.start()
 
     # Регистриуем роутеры в диспетчере
