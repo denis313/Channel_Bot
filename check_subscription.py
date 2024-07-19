@@ -1,8 +1,7 @@
 import logging
 from datetime import datetime, timedelta, date
 
-from aiogram import Bot
-
+from bot import bot
 from config import DATABASE_URL
 from database.requests import DatabaseManager
 from keyboards import keyboard_buy
@@ -14,14 +13,13 @@ db_manager = DatabaseManager(dsn=dsn)
 
 
 async def check_status():
-    bot = Bot
     logging.debug(f'check_status')
     now = date.today()
     users = await db_manager.get_users()
     for user in users:
         date_user = user.subscription_end_date
         days = date_user - now
-        if days.days == 3:
+        if days.days == 2:
             await db_manager.update_user(user_id=user.user_id, user_data={'subscription_status': False})
             await bot.send_message(chat_id=user.user_id, text=lexicon['end_sub'], reply_markup=keyboard_buy)
         elif days.days <= 0:
