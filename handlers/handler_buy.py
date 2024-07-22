@@ -61,7 +61,7 @@ async def successful_payment_handler(message: Message, bot: Bot):
     await message.answer('🟢 Поздравляю! Подписка успешно подключена!')
     if user:
         await db_manager.update_user(user_id=message.from_user.id, user_data={'subscription_status': True,
-                                                                              'subscription_start_date': date,
+                                                                              'subscription_start_date': start_date,
                                                                               'subscription_end_date': end_date})
     else:
         await db_manager.add_user(user_data={'user_id': message.from_user.id,

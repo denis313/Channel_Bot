@@ -1,11 +1,11 @@
 import asyncio
 import logging
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from aiogram import Bot, Dispatcher
+from aiogram import Dispatcher
 
 from bot import bot
 from check_subscription import check_status
-from handlers import start_handler, handler_buy, check_handler
+from handlers import start_handler, handler_buy, check_handler, help_handler, other_handler
 
 # Инициализируем логгер модуля
 logger = logging.getLogger(__name__)
@@ -23,12 +23,12 @@ async def main():
     dp = Dispatcher()
 
     scheduler = AsyncIOScheduler()
-    scheduler.add_job(check_status, 'cron', hour=1, minute=10)
+    scheduler.add_job(check_status, 'cron', hour=0, minute=0)
     scheduler.start()
 
     # Регистриуем роутеры в диспетчере
-    dp.include_routers(start_handler.router, handler_buy.router, check_handler.router)
-
+    dp.include_routers(start_handler.router, help_handler.router, handler_buy.router, check_handler.router,
+                       other_handler.router)
 
     # Пропускаем накопившиеся апдейты и запускаем polling
     await bot.delete_webhook(drop_pending_updates=True)
