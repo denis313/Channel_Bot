@@ -96,3 +96,9 @@ WHERE users.user_id = $1::BIGINT
 [2024-07-22 22:38:11,869] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 [2024-07-22 22:38:11,869] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
 [2024-07-22 22:38:23,133] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
+[2024-07-22 22:41:04,563] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+[2024-07-22 22:41:04,563] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
+[2024-07-22 22:41:15,815] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
+[2024-07-22 22:45:18,463] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+[2024-07-22 22:45:18,464] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
+[2024-07-22 22:45:29,752] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
