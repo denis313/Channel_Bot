@@ -11,5 +11,4 @@ router.message.filter(F.chat.type == 'private')
 
 @router.message(StateFilter(default_state))
 async def start_command(message: Message):
-    await db_manager.create_tables()
     await message.answer(lexicon['other'])
