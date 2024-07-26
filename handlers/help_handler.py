@@ -5,15 +5,14 @@ from aiogram.types import Message
 
 from database.requests import DatabaseManager
 from lexicon import lexicon
-from config import DATABASE_URL
+from config import db_config
 
 router = Router()
 router.message.filter(F.chat.type == 'private')
-dsn = DATABASE_URL
+dsn = db_config()
 db_manager = DatabaseManager(dsn=dsn)
 
 
 @router.message(F.text == '/help', StateFilter(default_state))
 async def start_command(message: Message):
-    await db_manager.create_tables()
     await message.answer(lexicon['help'])

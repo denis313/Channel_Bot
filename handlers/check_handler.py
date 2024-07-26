@@ -4,13 +4,13 @@ from aiogram import F, Router, Bot
 from aiogram.filters import ChatMemberUpdatedFilter, MEMBER, IS_MEMBER, IS_NOT_MEMBER
 from aiogram.types import ChatMemberUpdated
 
-from config import DATABASE_URL
+from config import db_config
 from database.requests import DatabaseManager
 
 logger = logging.getLogger(__name__)
 router = Router()
 router.message.filter(F.chat.type == 'channel')
-dsn = DATABASE_URL
+dsn = db_config()
 db_manager = DatabaseManager(dsn=dsn)
 
 

@@ -1,14 +1,14 @@
 import logging
-from datetime import datetime, timedelta, date
+from datetime import date
 
 from bot import bot
-from config import DATABASE_URL
+from config import db_config
 from database.requests import DatabaseManager
 from keyboards import keyboard_buy
 from lexicon import lexicon
 
 logger = logging.getLogger(__name__)
-dsn = DATABASE_URL
+dsn = db_config()
 db_manager = DatabaseManager(dsn=dsn)
 
 

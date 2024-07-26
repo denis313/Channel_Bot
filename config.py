@@ -25,4 +25,10 @@ def admin_id(path: str | None = None) -> str:
     return id_admin
 
 
-DATABASE_URL = 'postgresql+asyncpg://postgres:FunkoPop@localhost/channel_db'
+def db_config(path: str | None = None) -> str:
+    env = environs.Env()
+    env.read_env(path)
+    url = env('DATABASE_URL')
+    return url
+
+

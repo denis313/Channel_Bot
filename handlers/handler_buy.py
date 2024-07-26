@@ -4,23 +4,14 @@ from datetime import timedelta, date
 from aiogram import F, Router, Bot
 from aiogram.types import Message, CallbackQuery, LabeledPrice, PreCheckoutQuery
 
-from config import admin_id, DATABASE_URL
+from config import admin_id, db_config
 from database.requests import DatabaseManager
 from lexicon import lexicon
-
-# from LEXICON.lexicon import LEXICON_Creator, LEXICON_keyboard, LEXICON_FSM
-# from config_data.config import DATABASE_URL
-# from database.requests import DatabaseManager
-# from filters.filter import IsPrivate, IsCreator
-# from handlers.general.message_profile import profile
-# from keyboards.callback_data_classes import SeatsFactory
-# from keyboards.general_keyboards import keyboard_stock, keyboard_change_stock
-# from services.services import random_assignment
 
 logger = logging.getLogger(__name__)
 router = Router()
 router.message.filter(F.chat.type == 'private')
-dsn = DATABASE_URL
+dsn = db_config()
 db_manager = DatabaseManager(dsn=dsn)
 
 

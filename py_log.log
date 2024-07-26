@@ -1,104 +1,308 @@
-[2024-07-22 00:24:17,601] #DEBUG    win32.py:58 - tzlocal - Looking up time zone info from registry
-[2024-07-22 00:24:17,664] #INFO     base.py:454 - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
-[2024-07-22 00:24:17,673] #INFO     base.py:895 - apscheduler.scheduler - Added job "check_status" to job store "default"
-[2024-07-22 00:24:17,673] #INFO     base.py:181 - apscheduler.scheduler - Scheduler started
-[2024-07-22 00:24:17,677] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
-[2024-07-22 00:24:17,678] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-23 00:00:00+03:00 (in 84942.321472 seconds)
-[2024-07-22 00:24:18,005] #INFO     dispatcher.py:527 - aiogram.dispatcher - Start polling
-[2024-07-22 00:24:18,099] #INFO     dispatcher.py:341 - aiogram.dispatcher - Run polling for bot @Bot_for_schoolbot id=7417513030 - 'SchoolBot'
-[2024-07-22 00:27:27,894] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
-[2024-07-22 00:27:27,894] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 00:27:27,916] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
-[2024-07-22 00:27:27,916] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 00:27:27,921] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
-[2024-07-22 00:27:27,921] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 00:27:27,925] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 00:27:27,969] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
-FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
-WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-[2024-07-22 00:27:27,970] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00140s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-[2024-07-22 00:27:28,073] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-22 00:27:29,215] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874910 is handled. Duration 5140 ms by bot id=7417513030
-[2024-07-22 00:27:30,780] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 00:27:30,787] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
-FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
-WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-[2024-07-22 00:27:30,788] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 2.818s ago] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-[2024-07-22 00:27:30,819] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-22 00:27:30,933] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874911 is handled. Duration 3797 ms by bot id=7417513030
-[2024-07-22 00:27:36,979] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
-[2024-07-22 00:27:36,985] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 00:27:36,988] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
-[2024-07-22 00:27:36,988] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 00:27:36,994] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
-[2024-07-22 00:27:36,995] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 00:27:37,002] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 00:27:37,012] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-22 00:27:37,012] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00045s] (1087502760,)
-[2024-07-22 00:27:37,028] #DEBUG    requests.py:33 - root - Get user by id=1087502760
-[2024-07-22 00:27:37,029] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-22 00:27:37,249] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874912 is handled. Duration 1608 ms by bot id=7417513030
-[2024-07-22 00:28:50,702] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874913 is handled. Duration 282 ms by bot id=7417513030
-[2024-07-22 00:28:53,615] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 00:28:53,617] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-22 00:28:53,617] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 76.61s ago] (1087502760,)
-[2024-07-22 00:28:53,625] #DEBUG    requests.py:33 - root - Get user by id=1087502760
-[2024-07-22 00:28:53,626] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-22 00:28:53,734] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 00:28:53,742] #INFO     base.py:1846 - sqlalchemy.engine.Engine - UPDATE users SET subscription_status=$1::BOOLEAN, subscription_start_date=$2::DATE, subscription_end_date=$3::DATE WHERE users.user_id = $4::BIGINT
-[2024-07-22 00:28:53,743] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00157s] (True, datetime.date(2024, 7, 22), datetime.date(2024, 7, 27), 1087502760)
-[2024-07-22 00:28:53,757] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-22 00:28:53,773] #DEBUG    requests.py:50 - root - Update user by id=1087502760
-[2024-07-22 00:28:53,774] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874914 is handled. Duration 969 ms by bot id=7417513030
-[2024-07-22 14:54:43,701] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select pg_catalog.version()
-[2024-07-22 14:54:43,706] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 14:54:43,725] #INFO     base.py:1846 - sqlalchemy.engine.Engine - select current_schema()
-[2024-07-22 14:54:43,725] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 14:54:43,729] #INFO     base.py:1846 - sqlalchemy.engine.Engine - show standard_conforming_strings
-[2024-07-22 14:54:43,730] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [raw sql] ()
-[2024-07-22 14:54:43,734] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 14:54:43,767] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT pg_catalog.pg_class.relname 
-FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
-WHERE pg_catalog.pg_class.relname = $1::VARCHAR AND pg_catalog.pg_class.relkind = ANY (ARRAY[$2::VARCHAR, $3::VARCHAR, $4::VARCHAR, $5::VARCHAR, $6::VARCHAR]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != $7::VARCHAR
-[2024-07-22 14:54:43,767] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [generated in 0.00094s] ('users', 'r', 'p', 'f', 'v', 'm', 'pg_catalog')
-[2024-07-22 14:54:43,783] #INFO     base.py:2705 - sqlalchemy.engine.Engine - COMMIT
-[2024-07-22 14:54:44,145] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874915 is handled. Duration 781 ms by bot id=7417513030
-[2024-07-22 15:40:38,428] #INFO     base.py:2699 - sqlalchemy.engine.Engine - BEGIN (implicit)
-[2024-07-22 15:40:38,430] #INFO     base.py:1846 - sqlalchemy.engine.Engine - SELECT users.id_user, users.user_id, users.telegram_id, users.username, users.subscription_status, users.subscription_start_date, users.subscription_end_date 
-FROM users 
-WHERE users.user_id = $1::BIGINT
-[2024-07-22 15:40:38,430] #INFO     base.py:1846 - sqlalchemy.engine.Engine - [cached since 5.478e+04s ago] (1087502760,)
-[2024-07-22 15:40:38,452] #DEBUG    requests.py:33 - root - Get user by id=1087502760
-[2024-07-22 15:40:38,452] #INFO     base.py:2702 - sqlalchemy.engine.Engine - ROLLBACK
-[2024-07-22 15:40:38,751] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874916 is handled. Duration 342 ms by bot id=7417513030
-[2024-07-22 22:11:50,522] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:11:50,530] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:12:01,801] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:18:25,235] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:18:25,235] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:18:36,501] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:23:39,111] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:23:39,111] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:23:50,374] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:23:50,376] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:23:50,376] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:24:01,642] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:30:45,628] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:30:45,628] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:30:56,880] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:35:19,149] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:35:19,150] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:35:30,425] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:38:11,869] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:38:11,869] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:38:23,133] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:41:04,563] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:41:04,563] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:41:15,815] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
-[2024-07-22 22:45:18,463] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
-[2024-07-22 22:45:18,464] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
-[2024-07-22 22:45:29,752] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 1, bot id = 7417513030)
+[2024-07-25 22:12:47,469] #DEBUG    win32.py:58 - tzlocal - Looking up time zone info from registry
+[2024-07-25 22:12:47,489] #INFO     base.py:454 - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+[2024-07-25 22:12:47,496] #INFO     base.py:895 - apscheduler.scheduler - Added job "check_status" to job store "default"
+[2024-07-25 22:12:47,496] #INFO     base.py:181 - apscheduler.scheduler - Scheduler started
+[2024-07-25 22:12:47,497] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
+[2024-07-25 22:12:47,498] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-26 00:00:00+03:00 (in 6432.501808 seconds)
+[2024-07-25 22:12:47,847] #INFO     dispatcher.py:527 - aiogram.dispatcher - Start polling
+[2024-07-25 22:12:47,935] #INFO     dispatcher.py:341 - aiogram.dispatcher - Run polling for bot @Bot_for_schoolbot id=7417513030 - 'SchoolBot'
+[2024-07-25 22:16:17,425] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874961 is handled. Duration 531 ms by bot id=7417513030
+[2024-07-25 22:16:20,520] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874962 is not handled. Duration 2281 ms by bot id=7417513030
+[2024-07-25 22:16:20,520] #ERROR    dispatcher.py:315 - aiogram.event - Cause exception while process update id=588874962 by bot id=7417513030
+ConnectionRefusedError: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение
+Traceback (most recent call last):
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\handlers\handler_buy.py", line 20, in buy_subscribe
+    user = await db_manager.get_user(user_id=callback.from_user.id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\database\requests.py", line 31, in get_user
+    result = await session.execute(select(Users).where(Users.user_id == user_id))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 461, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2226, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3276, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3300, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 620, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 932, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connection.py", line 2329, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 1017, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 991, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 828, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 873, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 744, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1119, in create_connection
+    raise exceptions[0]
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1101, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1004, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение
+[2024-07-25 22:16:31,505] #INFO     dispatcher.py:172 - aiogram.event - Update id=588874963 is handled. Duration 141 ms by bot id=7417513030
+[2024-07-26 00:00:00,014] #DEBUG    base.py:954 - apscheduler.scheduler - Looking for jobs to run
+[2024-07-26 00:00:00,030] #DEBUG    base.py:1034 - apscheduler.scheduler - Next wakeup is due at 2024-07-27 00:00:00+03:00 (in 86399.969573 seconds)
+[2024-07-26 00:00:00,032] #INFO     base_py3.py:28 - apscheduler.executors.default - Running job "check_status (trigger: cron[hour='0', minute='0'], next run at: 2024-07-27 00:00:00 MSK)" (scheduled at 2024-07-26 00:00:00+03:00)
+[2024-07-26 00:00:00,034] #DEBUG    check_subscription.py:16 - root - check_status
+[2024-07-26 00:00:02,473] #ERROR    base_py3.py:36 - apscheduler.executors.default - Job "check_status (trigger: cron[hour='0', minute='0'], next run at: 2024-07-27 00:00:00 MSK)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\apscheduler\executors\base_py3.py", line 30, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\check_subscription.py", line 18, in check_status
+    users = await db_manager.get_users()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\database\requests.py", line 39, in get_users
+    result = await session.execute(select(Users))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\ext\asyncio\session.py", line 461, in execute
+    result = await greenlet_spawn(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 201, in greenlet_spawn
+    result = context.throw(*sys.exc_info())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2226, in _execute_internal
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2095, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3276, in connect
+    return self._connection_cls(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 146, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3300, in raw_connection
+    return self.pool.connect()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1263, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 712, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 179, in _do_get
+    with util.safe_reraise():
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\impl.py", line 177, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 390, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 674, in __init__
+    self.__connect()
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 900, in __connect
+    with util.safe_reraise():
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\pool\base.py", line 896, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\create.py", line 643, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\engine\default.py", line 620, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\dialects\postgresql\asyncpg.py", line 932, in connect
+    await_only(creator_fn(*arg, **kw)),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 132, in await_only
+    return current.parent.switch(awaitable)  # type: ignore[no-any-return,attr-defined] # noqa: E501
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\sqlalchemy\util\_concurrency_py3k.py", line 196, in greenlet_spawn
+    value = await result
+            ^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connection.py", line 2329, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 1017, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 991, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 828, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 873, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\PycharmProjects\Channel_Bot\venv\Lib\site-packages\asyncpg\connect_utils.py", line 744, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1119, in create_connection
+    raise exceptions[0]
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1101, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\base_events.py", line 1004, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\proactor_events.py", line 727, in sock_connect
+    return await self._proactor.connect(sock, address)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 798, in _poll
+    value = callback(transferred, key, ov)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\evtus\AppData\Local\Programs\Python\Python312\Lib\asyncio\windows_events.py", line 594, in finish_connect
+    ov.getresult()
+ConnectionRefusedError: [WinError 1225] Удаленный компьютер отклонил это сетевое подключение
+[2024-07-26 11:10:38,479] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+[2024-07-26 11:10:38,488] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7417513030)
+[2024-07-26 11:10:39,506] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-26 11:10:39,506] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.285335 seconds and try again... (tryings = 1, bot id = 7417513030)
+[2024-07-26 11:10:40,798] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-26 11:10:40,798] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 1.796414 seconds and try again... (tryings = 2, bot id = 7417513030)
+[2024-07-26 11:10:42,888] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-26 11:10:42,888] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 2.059419 seconds and try again... (tryings = 3, bot id = 7417513030)
+[2024-07-26 11:10:44,956] #ERROR    dispatcher.py:219 - aiogram.dispatcher - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+[2024-07-26 11:10:44,956] #WARNING  dispatcher.py:221 - aiogram.dispatcher - Sleep for 2.802005 seconds and try again... (tryings = 4, bot id = 7417513030)
+[2024-07-26 11:10:58,086] #INFO     dispatcher.py:233 - aiogram.dispatcher - Connection established (tryings = 5, bot id = 7417513030)
