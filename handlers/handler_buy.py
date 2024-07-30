@@ -4,7 +4,7 @@ from datetime import timedelta, date
 from aiogram import F, Router, Bot
 from aiogram.types import Message, CallbackQuery, LabeledPrice, PreCheckoutQuery
 
-from config import admin_id, db_config
+from config import admin_id, db_config, provider_token
 from database.requests import DatabaseManager
 from lexicon import lexicon
 
@@ -26,7 +26,7 @@ async def buy_subscribe(callback: CallbackQuery, bot: Bot):
             need_phone_number=True,
             title='Подписка на канал',
             description='Подписка на платный закрытый канал',
-            provider_token="381764678:TEST:89489",
+            provider_token=provider_token(),
             currency='RUB',
             payload='buy_subscribe',
             start_parameter='text',
