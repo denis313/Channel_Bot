@@ -28,3 +28,4 @@ async def check_status():
             await bot.ban_chat_member(chat_id=-1002192877844, user_id=user.user_id)
             await bot.unban_chat_member(chat_id=-1002192877844, user_id=user.user_id)
             logging.debug(f'Kick user by id={user.user_id}')
+

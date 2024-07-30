@@ -68,6 +68,3 @@ async def successful_payment_handler(message: Message, bot: Bot):
                                                                user_id=message.from_user.id,
                                                                user_email=successful_payment.order_info.email,
                                                                user_phone=successful_payment.order_info.phone_number))
-
-
-
