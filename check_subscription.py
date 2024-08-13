@@ -19,7 +19,7 @@ async def check_status():
     for user in users:
         date_user = user.subscription_end_date
         days = date_user - now
-        if days.days == 2:
+        if days.days == 3:
             await db_manager.update_user(user_id=user.user_id, user_data={'subscription_status': False})
             await bot.send_message(chat_id=user.user_id, text=lexicon['end_sub'], reply_markup=keyboard_buy)
         elif days.days <= 0:

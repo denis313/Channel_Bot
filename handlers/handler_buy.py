@@ -47,7 +47,7 @@ async def process_pre_check(pre_checkout_query: PreCheckoutQuery, bot: Bot):
 @router.message(F.successful_payment)
 async def successful_payment_handler(message: Message, bot: Bot):
     start_date = date.today()
-    end_date = start_date + timedelta(days=5)
+    end_date = start_date + timedelta(days=30)
     successful_payment = message.successful_payment
     user = await db_manager.get_user(user_id=message.from_user.id)
     await message.answer('🟢 Поздравляю! Подписка успешно подключена!')
