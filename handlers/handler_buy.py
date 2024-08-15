@@ -31,7 +31,7 @@ async def buy_subscribe(callback: CallbackQuery, bot: Bot):
             payload='buy_subscribe',
             start_parameter='text',
             prices=[
-                LabeledPrice(label="rub", amount=300 * 100)
+                LabeledPrice(label="rub", amount=750 * 100)
             ]
         )
     else:
