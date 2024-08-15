@@ -25,7 +25,7 @@ async def check_status():
         elif days.days <= 0:
             await db_manager.delete_user(user_id=user.user_id)
             await bot.send_message(chat_id=user.user_id, text=lexicon['del_user'], reply_markup=keyboard_buy)
-            await bot.ban_chat_member(chat_id=-1002192877844, user_id=user.user_id)
-            await bot.unban_chat_member(chat_id=-1002192877844, user_id=user.user_id)
+            await bot.ban_chat_member(chat_id=-1002130810612, user_id=user.user_id)
+            await bot.unban_chat_member(chat_id=-1002130810612, user_id=user.user_id)
             logging.debug(f'Kick user by id={user.user_id}')
 
