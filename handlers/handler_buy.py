@@ -1,3 +1,4 @@
+import json
 import logging
 from datetime import timedelta, date
 
@@ -30,14 +31,21 @@ async def buy_subscribe(callback: CallbackQuery, bot: Bot):
             currency='RUB',
             payload='buy_subscribe',
             start_parameter='text',
-            provider_data="{\"receipt\": "
-                            "{\"items\": "
-                            "[{\"description\": \"Подписка на канал\", "
-                            "\"quantity\": \"1\", "
-                            "\"amount\": {"
-                                "\"value\": \"750.00\", "
-                                "\"currency\": \"RUB\"}"
-                            ", \"vat_code\": 1}]}}",
+            provider_data=json.dumps({
+                "receipt": {
+                    "items": [
+                        {
+                            "description": "Подписка на канал",
+                            "quantity": "1",
+                            "amount": {
+                                "value": "750.00",  # Сумма в рублях
+                                "currency": "RUB"
+                            },
+                            "vat_code": 1
+                        }
+                    ]
+                }
+            }),
             send_email_to_provider=True,
             send_phone_number_to_provider=True,
             prices=[
