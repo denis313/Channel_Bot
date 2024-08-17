@@ -30,6 +30,14 @@ async def buy_subscribe(callback: CallbackQuery, bot: Bot):
             currency='RUB',
             payload='buy_subscribe',
             start_parameter='text',
+            provider_data="{\"receipt\": "
+                          "{\"items\": "
+                          "[{\"description\": \"Подписка на канал\", "
+                          "\"quantity\": \"1\", "
+                          "\"amount\": {"
+                          "\"value\": \"750.00\", "
+                          "\"currency\": \"RUB\"}, "
+                          "\"vat_code\": 1}]}}",
             prices=[
                 LabeledPrice(label="rub", amount=750 * 100)
             ]
