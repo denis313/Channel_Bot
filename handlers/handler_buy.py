@@ -37,8 +37,9 @@ async def buy_subscribe(callback: CallbackQuery, bot: Bot):
                             "\"amount\": {"
                                 "\"value\": \"750.00\", "
                                 "\"currency\": \"RUB\"}"
-                            ", \"vat_code\": 1}], "
-                          "\"email\": \"katia.radova@mail.ru\"}}",
+                            ", \"vat_code\": 1}]}}",
+            send_email_to_provider=True,
+            send_phone_number_to_provider=True,
             prices=[
                 LabeledPrice(label="rub", amount=750 * 100)
             ]
